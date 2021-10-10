@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+    <div style="padding-top: 5rem; text-align: center">
+        <p>제출 버튼을 누르면 함수를 실행하고 return 값을 출력해 주는 것을 만들어 보고 싶다.</p>
+    </div>
+
+    <br>
+    {##}
+    {#    <div style="padding-left: 600px; padding-right: 600px">#}
+    {#        <div class="shadow-lg p-3 mb-5 bg-body rounded">#}
+    {#            <div class="card" style="width: 18rem;">#}
+    {#                <div class="card-body">#}
+    {#                    <h5 class="card-title" style="text-align: center;">Get training</h5>#}
+    {#                    <p class="card-text" style="text-align: center">.......</p>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </div>#}
+
+
+    <div class="col-md-6" style="margin-left: 400px;">
+        <div class="card card-image mb-3"
+             style="background-image: url('https://cdn57.androidauthority.net/wp-content/uploads/2018/01/machine-learning-algorithms-840x488.jpg');">
+            <div class="text-white text-center d-flex align-items-center rgba-indigo-strong py-5 px-4">
+                <div style="text-align: center; color: black;">
+                    <h5 class="orange-text"><i class="fas fa-desktop"></i> intro</h5>
+                    <h3 class="card-title pt-2"><strong>서비스 소개</strong></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam,
+                        voluptatem,
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="d-grid gap-2">
+            <a href="{% url 'hello_world:upload' %}" class="btn btn-dark"
+               >let's start</a>
+        </div>
+
+    </div>
+
+
+
+{% endblock %}

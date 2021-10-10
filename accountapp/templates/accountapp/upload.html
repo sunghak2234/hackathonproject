@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+    <div style="padding-left: 600px; padding-right: 600px; padding-top: 200px;">
+        <div class="shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">Get training</h5>
+                    <form  action="{% url 'hello_world:test' %}"
+                            method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="d-grid gap-2">
+                            <input class="btn btn-light" type="file">
+                            <input type="submit"  class="btn btn-dark" >
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
