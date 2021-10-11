@@ -7,7 +7,7 @@ from django.views.generic import ListView
 
 
 def start(request):
-    return render(request, 'accountapp/start.html')
+    return render(request, 'accountapp/startex.html')
 
 def test(request):
     return render(request, 'accountapp/test.html')
