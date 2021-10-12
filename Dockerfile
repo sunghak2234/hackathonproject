@@ -8,7 +8,7 @@ WORKDIR /home/hackathonproject/
 
 RUN pip install -r requirements.txt
 
-
+RUN echo "django-insecure-cu+^-625*4d844i3eznf04@t1i9%a2a-c(7x8+m(h3my*!3qob" > .env
 
 RUN python manage.py migrate
 
