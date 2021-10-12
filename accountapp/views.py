@@ -7,7 +7,7 @@ from django.views.generic import ListView
 
 
 def start(request):
-    return render(request, 'accountapp/startex.html')
+    return render(request, 'accountapp/index.html')
 
 def test(request):
     return render(request, 'accountapp/test.html')
@@ -15,6 +15,6 @@ def test(request):
 def upload(request):
     if request.method == 'post':
         upload_file = request.FiLES['video']
-    return render(request, 'accountapp/upload.html')
+    return render(request, 'accountapp/modals.html')
 
 
